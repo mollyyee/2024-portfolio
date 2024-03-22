@@ -1,0 +1,12 @@
+.component_wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
+
+
+.textwrapper {
+    width: 100%;
+}
+

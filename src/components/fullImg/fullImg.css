@@ -1,0 +1,12 @@
+.fullImg {
+    background-color: black;
+    padding: 6rem 0rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img {
+    width: 80%;
+}

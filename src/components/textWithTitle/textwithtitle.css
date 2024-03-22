@@ -1,0 +1,21 @@
+.component_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.textwrapper {
+    width: 100%;
+}
+
+
+.home__txt {
+    text-align: left;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+      

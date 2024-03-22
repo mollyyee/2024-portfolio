@@ -1,0 +1,229 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:wght@400;500;600&display=swap');
+
+*{
+    font-family: "Work Sans";
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    color: #0B1530;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;  
+}
+
+h2 {
+    font-family: 'Prata';
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+h3 {
+    font-family: 'Prata';
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: .1px;
+}
+
+h4 {
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: 2.5rem;
+    opacity: .8;
+}
+
+h5 {
+    font-family: "Work Sans";
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 12px;
+    opacity: .9;
+    
+}
+
+h6 { 
+    font-family: "Work Sans";
+    font-size: 4.3rem;
+    font-weight: 600;
+    padding-bottom: 4rem;
+    opacity: .9;
+}
+
+hr {
+    opacity: .05;
+}
+
+h2, p { 
+    display: inline-block;
+}
+
+p {
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    opacity: .7;
+    padding-bottom: .4rem;
+}
+
+/* BODY */
+
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+
+.hero-wrapper {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-column-gap: 10px;
+    grid-template-columns: 40% 60%;
+} 
+
+.full-width {
+    width: 100%;
+    position: relative;
+}
+
+.left-column {
+    padding: 6rem 6vw 6vw 6vw;
+    height: 100vh;
+}
+
+
+.right-column {
+    padding: 6rem 0;
+}
+
+.column-section-wrapper {
+    display: flex;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    padding: 6vw 0;
+} 
+
+.exhibit {
+    background-color: black;
+    padding: 4rem 0 0 0;
+}
+
+.exhibit-text {
+    color: white;
+    text-align: center;
+    opacity: .8;
+}
+
+.home__img {
+    width: 100%;
+}
+
+.solution-text {
+    /* padding-top: 26px; */
+}
+
+/* TABLET + DESKTOP VERSION */
+    
+
+    @media (max-width: 724px) {
+        .hero-wrapper{
+            grid-template-columns: 80%;
+            width: 100%;
+            justify-content: center;
+        } 
+
+        .left-column {
+            padding: 6rem 2vw 6vw 2vw;
+            height: 100vh;
+        }
+
+        .right-column {
+            padding: 6rem 2vw 6vw 2vw;
+        }
+
+        .section-wrapper {
+            width: 90vw;
+            margin: auto;
+        }
+
+        .column-section-wrapper{
+            grid-template-columns: 80%;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+
+      }
+
+      @media (min-width: 725px) and (max-width: 1023px) {
+        .hero-wrapper {
+            grid-template-columns: 70%;
+            justify-content: center;
+        } 
+        .column-section-wrapper{
+            grid-template-columns: 100%;
+            grid-column-gap: 2rem;
+            justify-content: center;
+        } 
+
+        .section-wrapper {
+            width: 80vw;
+            margin: auto;
+        }
+
+      }
+
+
+      /* DESKTOP VERSION */
+      @media (min-width: 1024px) and (max-width: 1200px) {
+        .hero-wrapper {
+            grid-column-gap: 10px;
+            grid-template-columns: 48% 52%;
+        } 
+
+        .column-section-wrapper {
+            grid-column-gap: 2rem;
+            grid-template-columns: 40% 60%;
+        } 
+        .section-wrapper {
+            width: 80vw;
+            margin: auto;
+        }
+      }
+      
+
+    /* BIG DESKTOP VERSION */
+    @media (min-width: 1201px) and (max-width: 1399px){
+        .hero-wrapper {
+            grid-column-gap: 10px;
+            grid-template-columns: 45% 55%;
+        } 
+
+        .column-section-wrapper {
+            grid-template-columns: 40% 60%;
+            grid-column-gap: 3rem;
+        } 
+
+        .section-wrapper {
+            width: 75vw;
+            margin: auto;
+        }
+        }
+              
+
+        @media (min-width: 1400px) {
+
+            .section-wrapper {
+                width: 70vw;
+                margin: auto;
+            }
+            .column-section-wrapper {
+                grid-template-columns: 40% 60%;
+                grid-column-gap: 3rem;
+            } 
+            }

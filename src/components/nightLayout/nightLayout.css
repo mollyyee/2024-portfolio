@@ -1,0 +1,10 @@
+.nighttime {
+    background-image: linear-gradient(to bottom, #0F1A23, #5F5A64, #80757E);
+    color: white;
+
+}
+
+.nighttext {
+    color: white;
+    opacity: .8;
+}

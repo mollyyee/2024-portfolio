@@ -1,0 +1,4 @@
+.abouttext {
+    display: flex;
+    flex-direction: row;
+}

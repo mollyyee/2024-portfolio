@@ -1,0 +1,43 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.links > *{
+    margin: 0 0 0 2rem;
+
+}
+
+nav a {
+    height: 100%;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;  
+}
+
+
+
+    
+/* TABLET + DESKTOP VERSION */
+
+@media (min-width: 726px) and (max-width: 1023px) {
+    
+    .hero-wrapper {
+        grid-template-columns: 70%;
+        justify-content: center;
+    } 
+    }
+      
+
+      
+      

@@ -1,0 +1,31 @@
+.component_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textwrapper {
+    width: 100%;
+}
+
+a {
+    height: 36rem;
+}
+
+.textRow {
+    height: 8rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.home__txt {
+    text-align: left;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+      
