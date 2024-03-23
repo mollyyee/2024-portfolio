@@ -31,9 +31,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-
-
   ],
+
+  pathPrefix: "/2024-portfolio",
+
   siteMetadata: {
     title: "m yee's design portfolio",
     description: 'product designer portfolio 2024',

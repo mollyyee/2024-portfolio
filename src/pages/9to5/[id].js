@@ -4,7 +4,6 @@ import "../../styles/global.css"
 
 import FullImg from "../../components/fullImg/FullImg"
 import ProjectContext from "../../components/projectContext/ProjectContext"
-import TextNoTitle from "../../components/textNoTitle/TextNoTitle"
 import ProjectHeader from "../../components/projectHeader/ProjectHeader"
 import HeroImg from "../../components/heroImg/HeroImg"
 import Navbar from "../../components/navbar/Navbar"
@@ -24,10 +23,8 @@ import { dayProjectsData } from "../../projects/dayprojectsdata"
 
 export default function ProjectDetails({ params }) {
 
-    const id = params.id;
-    const projectSelector = dayProjectsData.find(p => p.id == id)
-
-
+    const id = parseInt(params.id);
+    const projectSelector = dayProjectsData.find(p => p.id === id)
 
     return (
         <DayLayout>
