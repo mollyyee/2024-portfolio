@@ -18,7 +18,7 @@ export default function AboutMe() {
                     My favorite projects are the ones where I get to work with thoughtful people who care deeply about quality. If you are the same, perhaps we'll collaborate sometime.
                     <br></br>
                     <br></br>
-                    Feel free to reach out via LinkedIn. </p>
+                    Feel free to reach out via <a className="link" target="_blank" href="https://www.linkedin.com/in/mollyyee/">LinkedIn.</a> </p>
             </section>
         </div>)
 }
