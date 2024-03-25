@@ -3,16 +3,19 @@ import HobbyHeader from "../../components/hobbyHeader/HobbyHeader"
 import HeroImg from "../../components/heroImg/HeroImg"
 import "../../styles/global.css"
 import FullImg from "../../components/fullImg/FullImg"
-import { nightProjectsData } from "../../projects/nightprojectsdata";
 import NightLayout from "../../components/nightLayout/NightLayout"
 import NavbarNight from "../../components/navbarNight/NavbarNight"
 
+import { nightProjectsData } from "../../projects/nightprojectsdata";
 
 
 export default function ProjectDetails({ params }) {
 
     const id = parseInt(params.id);
     const projectSelector = nightProjectsData.find(p => p.id === id)
+    if (!projectSelector) {
+        return (<></>)
+    }
 
     return (
         <NightLayout>
@@ -22,11 +25,11 @@ export default function ProjectDetails({ params }) {
                     <HobbyHeader project={projectSelector} />
                 </div>
                 <div >
-                    <HeroImg currentImg={projectSelector.img} />
+                    <HeroImg currentImg={projectSelector?.img} />
                 </div>
                 <div className="full-width">
-                    <FullImg img={projectSelector.detailImg} />
-                    <FullImg img={projectSelector.detailImg2} />
+                    <FullImg img={projectSelector?.detailImg} />
+                    <FullImg img={projectSelector?.detailImg2} />
                 </div>
             </section>
         </NightLayout>

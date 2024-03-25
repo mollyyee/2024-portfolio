@@ -25,6 +25,9 @@ export default function ProjectDetails({ params }) {
 
     const id = parseInt(params.id);
     const projectSelector = dayProjectsData.find(p => p.id === id)
+    if (!projectSelector) {
+        return (<></>)
+    }
 
     return (
         <DayLayout>
@@ -36,13 +39,13 @@ export default function ProjectDetails({ params }) {
                         <ProjectHeader project={projectSelector} />
                     </div>
                     <div>
-                        <HeroImg currentImg={projectSelector.img} />
+                        <HeroImg currentImg={projectSelector?.img} />
                     </div>
                 </div>
 
                 <div className="full-width">
-                    <FullImg img={projectSelector.detailImg} />
-                    <FullImg img={projectSelector.detailImg2} />
+                    <FullImg img={projectSelector?.detailImg} />
+                    <FullImg img={projectSelector?.detailImg2} />
                 </div>
                 <div className='section-wrapper'>
                     <ProjectContext project={projectSelector} />
@@ -51,19 +54,19 @@ export default function ProjectDetails({ params }) {
                 <div className="full-width">
                     <div className="exhibit">
                         <h4 className="exhibit-text">Process Example 1</h4>
-                        <h5 className="exhibit-text">{projectSelector.exhibitaSub}</h5>
+                        <h5 className="exhibit-text">{projectSelector?.exhibitaSub}</h5>
                     </div>
-                    <FullImg img={projectSelector.exhibita} />
+                    <FullImg img={projectSelector?.exhibita} />
                     <div className="exhibit">
                         <h4 className="exhibit-text">Process Example 2</h4>
-                        <h5 className="exhibit-text">{projectSelector.exhibitbSub}</h5>
+                        <h5 className="exhibit-text">{projectSelector?.exhibitbSub}</h5>
                     </div>
-                    <FullImg img={projectSelector.exhibitb} />
+                    <FullImg img={projectSelector?.exhibitb} />
                     <div className="exhibit">
                         <h4 className="exhibit-text">Process Example 3</h4>
-                        <h5 className="exhibit-text">{projectSelector.exhibitcSub}</h5>
+                        <h5 className="exhibit-text">{projectSelector?.exhibitcSub}</h5>
                     </div>
-                    <FullImg img={projectSelector.exhibitc} />
+                    <FullImg img={projectSelector?.exhibitc} />
                 </div>
 
                 <div className='section-wrapper'>
@@ -72,7 +75,7 @@ export default function ProjectDetails({ params }) {
                             <SolutionText project={projectSelector} />
                         </div>
                         <div>
-                            <ColumnImg currentImg={projectSelector.solution1} />
+                            <ColumnImg currentImg={projectSelector?.solution1} />
 
                         </div>
                     </div>
@@ -81,7 +84,7 @@ export default function ProjectDetails({ params }) {
                             <SolutionText2 project={projectSelector} />
                         </div>
                         <div>
-                            <ColumnImg currentImg={projectSelector.solution2} />
+                            <ColumnImg currentImg={projectSelector?.solution2} />
                         </div>
                     </div>
                     <div className="column-section-wrapper">
@@ -89,7 +92,7 @@ export default function ProjectDetails({ params }) {
                             <SolutionText3 project={projectSelector} />
                         </div>
                         <div >
-                            <ColumnImg currentImg={projectSelector.solution3} />
+                            <ColumnImg currentImg={projectSelector?.solution3} />
 
                         </div>
                     </div>

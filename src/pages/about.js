@@ -8,7 +8,7 @@ import me from "../images/me.jpg"
 
 export default function About() {
 
-  const [currentImg, setCurrentImg] = React.useState(me)
+  const [currentImg] = React.useState(me)
 
   return (
     <section className="hero-wrapper">
